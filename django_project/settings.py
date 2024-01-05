@@ -27,7 +27,7 @@ if SECRET_KEY is None:
   exit(1)
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 X_FRAME_OPTIONS = '*'
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'ashoes',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
